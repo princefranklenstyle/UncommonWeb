@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 
 
 
@@ -355,7 +356,7 @@ function StayEngaged() {
         <video   src="../uncommon images/fin.mp4" controls></video> */}
         </div>
 
-        <p>Instagram | LinkedIn | Blog</p>
+        <p>Instagram | LinkedIn |<Link to='/blog'>Blog</Link></p>
         <h3>Sign Up For Our Mailing List</h3>
 
         <form >

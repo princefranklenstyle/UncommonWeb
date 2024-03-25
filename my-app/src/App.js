@@ -2,21 +2,13 @@
 import React,{useState, useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Kuda from './components/Kuda';
-import Hero from './components/Hero';
-import UncommonImpact from './components/UncommonImpact';
-import HowItWorks from './components/HowItWorks';
-import BecomingAmentor from './components/BecomingAmentor';
-import JoinOurCommunity from './components/JoinOurCommunity';
-import Sustainability from './components/Sustainability';
-import StayEngaged from './components/StayEngaged';
-import Footer from './components/Footer';
-import Blue from './components/Blue';
-import Donate from './Pages/Donate';
-import OurStory from './Pages/OurStory';
-import InnovationHubs from './Pages/InnovationHubs';
-import HireUs from './Pages/HireUs';
+import Donate from './Pages/Donate/Donate';
+import OurStory from './Pages/OurStory/OurStory';
+import InnovationHubs from './Pages/InnovationHubs/InnovationHubs';
+import HireUs from './Pages/HireUs/HireUs';
 import Blog from './components/Blog';
-import axios from 'axios'
+import Home from './Pages/Home/Home'
+import Pen from './components/Pen';
 
 
 function App() {
@@ -28,25 +20,16 @@ function App() {
     <Router>
           <Kuda />
           <Routes>
-            <Route element={<Hero />} path="/" />
-            <Route element={<InnovationHubs />} path="/innovationhubs" />
+            <Route element={<Home />} path="/" />
             <Route element={<OurStory />} path="/our-story" />
+            <Route element={<InnovationHubs />} path="/innovation-hubs" />
             <Route element={<HireUs />} path="/hire-us" />
             <Route element={<Donate />} path="/donate" />
+            <Route element={<Blog />} path="/blog" />
+
             </Routes>
-<Blog/>
-          <UncommonImpact />
-          <HowItWorks />
-          <BecomingAmentor />
-          <JoinOurCommunity />
-          <Sustainability />
-          <StayEngaged />
-          <Blue />
-          <Footer/>
-        {/* <InnovationHubs/>
-        <OurStory/>
-        <HireUs/>
-        <Donate/>   */}
+            <Pen/>
+
       </Router>
   );
 }

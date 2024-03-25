@@ -401,7 +401,7 @@ max-height:100vh;
 overflow: hidden;
 display: flex;
 flex-direction:row;
-margin-right: 27px;
+margin-right:85px;
     justify-content: flex-end;
     li:hover {
     background-color: transparent;
